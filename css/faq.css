@@ -1,0 +1,353 @@
+:root{ 
+  --primary-color: #59926f;
+    --secondary-color: #8bb39a;
+    --ternary-color: #62b6b7;
+    --hover-color: #7c81ad;
+    --white-color: #cbedd5;
+  }
+  
+  
+  /* Start FAQ hero section  */
+  .questions {
+    height: 36rem; /* You can adjust this to your design requirements */
+    margin: 0 auto; /* Center horizontally */
+    background: linear-gradient(
+      rgba(30, 30, 30, 0.578), 
+      rgba(30, 30, 30, 0.578)),
+               
+      url("/FAQ/images/questions3.jpg") center/cover no-repeat;
+    color: var(--white-color); /* Ensure that this variable is defined correctly */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .questions__content {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  .questions h4 {
+    font-size: 5rem;
+    letter-spacing: 0.2rem;
+    font-weight: bold;
+  }
+  
+  .questions p {
+    font-size: 7rem;
+    letter-spacing: 0.2rem;
+    font-weight: bold;
+  }
+  
+  @media (max-width:760px) {
+    
+  .questions h4 {
+    font-size: 1.4rem;
+    letter-spacing: 0.2rem;
+  }
+  
+  .questions p {
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+  }
+  
+  }
+  /** End FAQ hero section */
+  
+  /* questions section  */
+  .questions-section{
+         
+    min-height: 100vh;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;             
+    align-items: start;
+    margin-top: 5rem;
+    
+  }
+  
+  .title{
+    font-size:3rem ;
+    margin: 2rem;
+    text-align: center;
+    
+  }
+  .feq
+  {
+  max-width: 700px;  
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+  border-bottom:2px solid #000000 ;
+  cursor: pointer;
+  }
+  .question
+  {
+   display: flex;
+   justify-content: space-between;
+   align-items: center; 
+  }
+  .question h3
+  {
+    font-size: large;
+  
+  }
+  
+  .answer
+  {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.4s ease;
+  }
+  .answer p{
+    padding-top: 1rem;
+    line-height: 1.6rem;
+    font-size: large;
+  }
+  
+  .feq.active .answer{
+  max-height: 300px;
+  animation: fade 1s ease-in-out;
+  }
+  .feq.active svg{
+    transform: rotate(180deg);
+  }
+  svg {
+  transition: transform .5s ease-in;
+  }
+  @keyframes fade {
+  from
+  {
+  opacity: 0;
+  transform:translateY(-10px) ;
+  }
+  to{
+  opacity: 1;
+  transform: translateY(0px);
+  }
+  
+  }
+  .left-column {
+    width: 40%; /* Adjust the width as needed */
+    padding: 2rem;
+    margin-top: 3rem;
+    font-size: large;
+  }
+  
+  .right-column {
+    width: 60%; /* Adjust the width as needed */
+    padding: 2rem;
+  }
+  
+  
+  /*End  questions section  */
+  html {
+    font-size: 62.5%;
+  }
+  
+  body {
+    font-family: "Cormorant", serif;
+  }
+  
+  .container {
+    width: 117rem;
+    padding: 1rem;
+    margin: 0 auto;
+  }
+  
+  /** End Global Styling  */
+  
+  /** Start Header */
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--secondary-color);
+    height: 9rem;
+    position: sticky;
+    top: 0;
+    opacity: 0.96;
+    z-index: 999;
+  }
+  
+  .header__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo-img {
+    width: 6rem;
+    margin: 0 4rem;
+  }
+  
+  .main-nav__list,
+  .footer-nav__list {
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+    font-size: 2.2rem;
+    font-weight: 700;
+  }
+  
+  .main-nav__list .list-item a,
+  .footer-nav__list .list-item a {
+    text-decoration: none;
+    color: #000;
+    transition: all 0.3s;
+  }
+  
+  .main-nav__list .list-item a:hover,
+  .footer-nav__list .list-item a:hover {
+    color: var(--white-color);
+  }
+  
+  .header__box2 {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-right: 4rem;
+  }
+  
+  #login,
+  #signUp {
+    font-family: inherit;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border: none;
+    font-size: 1.6rem;
+    font-weight: 700;
+    width: 10rem;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    margin-right: 0.5rem;
+    transition: all 0.3s;
+  }
+  
+  #login:hover,
+  #signUp:hover {
+    background-color: var(--white-color);
+    color: #000;
+  }
+  
+  .search__link {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .search__btn--header {
+    width: 3rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    cursor: pointer;
+    z-index: 1;
+    transition: all 0.2s;
+  }
+  
+  .search__btn--header:hover {
+    color: var(--white-color);
+  }
+  
+  .hamburger {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .bar {
+    display: block;
+    width: 2.5rem;
+    height: 0.3rem;
+    margin: 0.5rem auto;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--white-color);
+  }
+  
+  /** End Header */
+  
+  /** Start Footer Section */
+  
+  .footer {
+    margin-top: 14rem;
+    height: 40rem;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer__links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+    padding: 4rem;
+    border-bottom: 0.2rem solid #e4e4e4;
+  }
+  
+  .nav-footer__heading,
+  .footer-socialmedia__heading,
+  .footer-quickLinks__heading {
+    color: var(--white-color);
+    font-size: 2.6rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+  }
+  
+  .nav-footer__links,
+  .footer-quickLinks__links {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-size: 1.6rem;
+  }
+  
+  .nav-footer__links .link-item a,
+  .footer-quickLinks .link-item a {
+    text-decoration: none;
+    color: var(--white-color);
+    transition: all 0.3s;
+  }
+  
+  .nav-footer__links .link-item a:hover,
+  .footer-quickLinks .link-item a:hover {
+    color: var(--primary-color);
+  }
+  
+  .footer-socialmedia {
+    width: 25rem;
+  }
+  
+  .footer-socialmedia__links {
+    display: flex;
+    gap: 3rem;
+  }
+  
+  .footer-socialmedia__links .link-item a {
+    font-size: 3rem;
+    color: var(--white-color);
+    transition: all 0.3s;
+  }
+  
+  .footer-socialmedia__links .link-item a:hover {
+    color: var(--primary-color);
+  }
+  
+  .footer-socialmedia__text {
+    color: var(--white-color);
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+  }
+  
+  .copyright {
+    color: var(--white-color);
+    align-self: center;
+    font-size: 1.6rem;
+  }

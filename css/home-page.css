@@ -1,0 +1,257 @@
+:root {
+  /** COLORS */
+  --primary-color: #59926f;
+  --secondary-color: #8bb39a;
+  --ternary-color: #62b6b7;
+  --hover-color: #7c81ad;
+  --white-color: #cbedd5;
+}
+
+/** Start Hero Section */
+
+.img-slider {
+  position: relative;
+  width: 90%;
+  height: 50rem;
+  margin: 1rem auto;
+  background-color: #333;
+}
+
+.img-slider__slide {
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  /* clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%); */
+  clip-path: circle(0% at 0 50%);
+  /* opacity: 0; */
+}
+
+.img-slider__slide.active {
+  /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); */
+  clip-path: circle(150% at 0 50%);
+  /* opacity: 1; */
+  transition: all 1s;
+}
+
+.img-slider__slide img {
+  z-index: 1;
+  width: 100%;
+  height: 50rem;
+  border: 1px solid #999;
+  filter: brightness(0.4);
+  object-fit: cover;
+}
+
+.img-slider__info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 1.5rem 3rem;
+}
+
+.img-slider__info h2 {
+  color: var(--white-color);
+  font-size: 5.5rem;
+  margin-bottom: 1rem;
+  letter-spacing: 0.2rem;
+}
+
+.img-slider__info p {
+  color: var(--white-color);
+  font-size: 2.4rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+}
+
+.img-slider__navigation--btns {
+  z-index: 2;
+  position: absolute;
+  display: flex;
+  bottom: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.img-slider__navigation--btns .btn {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 1.2rem;
+  height: 1.2rem;
+  margin: 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.img-slider__navigation--btns .btn.active {
+  background-color: #00d150;
+  box-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.5);
+}
+
+.img-slider__navigation--arrows {
+  height: 50rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 0 2rem; */
+}
+
+.prev-btn,
+.next-btn {
+  z-index: 99;
+  font-size: 3rem;
+  color: #222;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.prev-btn {
+  border-top-right-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
+}
+
+.next-btn {
+  border-top-left-radius: 0.3rem;
+  border-bottom-left-radius: 0.3rem;
+}
+
+/** End Hero Section */
+
+/** Start Books Section */
+
+.books-section {
+  margin-top: 13rem;
+}
+
+.books__heading {
+  text-align: center;
+  font-size: 5rem;
+  letter-spacing: 0.3rem;
+  margin-bottom: 6rem;
+}
+
+.books__grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 3rem;
+  row-gap: 6rem;
+}
+
+.book__card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.book__link {
+  position: relative;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.book__link img {
+  width: 100%;
+  height: 30rem;
+  object-fit: cover;
+}
+
+.book__overlay {
+  width: 100%;
+  height: 101%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--secondary-color);
+  opacity: 0.9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.2s;
+}
+
+.book__overlay:hover {
+  opacity: 0.9;
+}
+
+.book__overlay p {
+  position: relative;
+  color: #000;
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+  transition: all 0.2s;
+}
+
+.book__overlay p::after {
+  content: "";
+  position: absolute;
+  background-color: #000;
+  height: 0.3rem;
+  width: 0;
+  left: 0;
+  bottom: -0.5rem;
+  transition: all 0.3s;
+}
+
+.book__overlay p:hover::after {
+  width: 100%;
+}
+
+.book__author {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  color: #999;
+  letter-spacing: 0.3rem;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.book__title {
+  font-size: 1.9rem;
+  font-weight: 500;
+}
+
+/** Start Features  */
+.features {
+  height: 36rem;
+  width: 90%;
+  margin: 13rem auto 0;
+  background-image: linear-gradient(
+      rgba(89, 146, 111, 0.9),
+      rgba(89, 146, 111, 0.9)
+    ),
+    url("/Home-Page/images/features1.jpg");
+  background-size: cover;
+  background-position: center;
+  color: var(--white-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.features__content {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+.features h4 {
+  font-size: 2.4rem;
+  letter-spacing: 0.2rem;
+}
+
+.features p {
+  font-size: 3.5rem;
+  letter-spacing: 0.2rem;
+}
+
+/** End Features  */
+
+/** End Books Section */

@@ -1,0 +1,271 @@
+:root {
+  /** COLORS */
+  --primary-color: #59926f;
+  --secondary-color: #8bb39a;
+  --ternary-color: #62b6b7;
+  --hover-color: #7c81ad;
+  --white-color: #fff;
+}
+
+/** Start Global Styling  */
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Cormorant", serif;
+}
+
+.container {
+  width: 117rem;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+/** End Global Styling  */
+
+/** Start Header */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--secondary-color);
+  height: 9rem;
+  position: sticky;
+  top: 0;
+  opacity: 0.96;
+  z-index: 999;
+}
+
+.header__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-img {
+  width: 6rem;
+  margin: 0 4rem;
+}
+
+.main-nav__list,
+.footer-nav__list {
+  display: flex;
+  gap: 3rem;
+  list-style: none;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.main-nav__list .list-item a,
+.footer-nav__list .list-item a {
+  text-decoration: none;
+  color: #000;
+  transition: all 0.3s;
+}
+
+.main-nav__list .list-item a:hover,
+.footer-nav__list .list-item a:hover {
+  color: var(--white-color);
+}
+
+.header__box2 {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin-right: 4rem;
+}
+
+#login,
+#signUp {
+  font-family: inherit;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  border: none;
+  font-size: 1.6rem;
+  font-weight: 700;
+  width: 280px;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  transition: all 0.3s;
+}
+
+#login:hover,
+#signUp:hover {
+  background-color: var(--white-color);
+  color: #000;
+}
+
+.search__link {
+  text-decoration: none;
+  color: #000;
+}
+
+.search__btn--header {
+  width: 3rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  cursor: pointer;
+  z-index: 1;
+  transition: all 0.2s;
+}
+
+.search__btn--header:hover {
+  color: var(--white-color);
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 2.5rem;
+  height: 0.3rem;
+  margin: 0.5rem auto;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--white-color);
+}
+
+/** End Header */
+
+/** Start Footer Section */
+
+.footer {
+  margin-top: 14rem;
+  height: 40rem;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+  padding: 4rem;
+  border-bottom: 0.2rem solid #e4e4e4;
+}
+
+.nav-footer__heading,
+.footer-socialmedia__heading,
+.footer-quickLinks__heading {
+  color: var(--white-color);
+  font-size: 2.6rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+
+.nav-footer__links,
+.footer-quickLinks__links {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-size: 1.6rem;
+}
+
+.nav-footer__links .link-item a,
+.footer-quickLinks .link-item a {
+  text-decoration: none;
+  color: var(--white-color);
+  transition: all 0.3s;
+}
+
+.nav-footer__links .link-item a:hover,
+.footer-quickLinks .link-item a:hover {
+  color: var(--primary-color);
+}
+
+.footer-socialmedia {
+  width: 25rem;
+}
+
+.footer-socialmedia__links {
+  display: flex;
+  gap: 3rem;
+}
+
+.footer-socialmedia__links .link-item a {
+  font-size: 3rem;
+  color: var(--white-color);
+  transition: all 0.3s;
+}
+
+.footer-socialmedia__links .link-item a:hover {
+  color: var(--primary-color);
+}
+
+.footer-socialmedia__text {
+  color: var(--white-color);
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+
+.copyright {
+  color: var(--white-color);
+  align-self: center;
+  font-size: 1.6rem;
+}
+
+/** End Footer Section */
+
+footer {
+  margin-top: auto;
+  max-height: 100vh;
+  background-color: #343a40;
+  color: white;
+}
+i{
+  font-size: 1.5rem;
+  margin-left: 0.25rem;
+}
+.navbar {
+  font-size: 2rem;
+}
+.nav-item {
+  font-size: 2rem;
+}
+.form-control {
+  font-size: 2rem;
+}
+.btn {
+  font-size: 2rem;
+}
+.container {
+  font-size: 2rem;
+}
+.row{
+  font-size: 2rem;
+}
+i {
+  font-size: 2.5rem;
+}
+.col-md-12 {
+  font-size: 2rem;
+}
+.follow {
+  font-size: rem;
+}
+h5{
+  font-size: 3rem;
+}
+a {
+  text-decoration: none;
+  color: white;
+}

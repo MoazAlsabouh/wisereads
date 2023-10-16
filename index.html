@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/" >
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="css/userprofile.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/home-page.css" />
+
+</head>
+<body>
+  <header class="header">
+    <div class="header__box">
+      <a href="index.html" class="logo-link">
+        <img
+          src="images/books.png"
+          alt="An image of a logo"
+          class="logo-img" />
+      </a>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="list-item">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="list-item">
+            <a href="html/userprofile.html">dashbord</a>
+          </li>
+          <li class="list-item">
+            <a href="html/catalog-page.htm">Catalog</a>
+          </li>
+          <li class="list-item">
+            <a href="#">About Us</a>
+          </li>
+          <li class="list-item">
+            <a href="html/contactus.html">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__box2">
+      <a href="./Search-Page/search-page.html" class="search__link">
+        <div class="search__btn--header">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+      </a>
+      <div id="login-side">
+        <button id="login"><a href="html/register.html">Login</a></button>
+        <button id="signUp"><a href="html/register.html">Sign Up</a></button>
+      </div>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </header>
+<!--* Start Hero Section -->
+<section class="hero-section">
+  <div class="img-slider">
+    <div class="img-slider__slide active">
+      <img
+        src="/Home-Page/images/slider-img1.jpg"
+        alt="An image of some books" />
+      <div class="img-slider__info">
+        <h2>Slide 01</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque
+          dignissimos ab delectus nihil tempore quia velit autem, iure
+          cupiditate dolore dolor, temporibus similique officia odit quas
+          voluptate sunt ea quo.
+        </p>
+      </div>
+    </div>
+    <div class="img-slider__slide">
+      <img
+        src="/Home-Page/images/slider-img2.jpg"
+        alt="An image of some books" />
+      <div class="img-slider__info">
+        <h2>Slide 02</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque
+          dignissimos ab delectus nihil tempore quia velit autem, iure
+          cupiditate dolore dolor, temporibus similique officia odit quas
+          voluptate sunt ea quo.
+        </p>
+      </div>
+    </div>
+    <div class="img-slider__slide">
+      <img
+        src="/Home-Page/images/slider-img3.jpg"
+        alt="An image of some books" />
+      <div class="img-slider__info">
+        <h2>Slide 03</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque
+          dignissimos ab delectus nihil tempore quia velit autem, iure
+          cupiditate dolore dolor, temporibus similique officia odit quas
+          voluptate sunt ea quo.
+        </p>
+      </div>
+    </div>
+    <div class="img-slider__navigation--arrows">
+      <i class="fas fa-chevron-left prev-btn"></i>
+      <i class="fas fa-chevron-right next-btn"></i>
+    </div>
+    <div class="img-slider__navigation--btns">
+      <div class="btn active"></div>
+      <div class="btn"></div>
+      <div class="btn"></div>
+    </div>
+  </div>
+</section>
+<!--* End Hero Section -->
+
+<main>
+  <!--* Start Books Section -->
+  <section class="books-section">
+    <div class="container">
+      <div class="books">
+        <h1 class="books__heading">Books</h1>
+        <div class="books__grid">
+          <template data-book-template>
+            <div class="book__card">
+              <a href="" class="book__link">
+                <img
+                  src=""
+                  alt="A photo for a book cover"
+                  class="book__img" />
+                <div class="book__overlay">
+                  <p>Read More</p>
+                </div>
+              </a>
+              <p class="book__author"></p>
+              <p class="book__title"></p>
+            </div>
+          </template>
+
+          <!-- <div class="book__card">
+          <a href="#" class="book__link">
+            <img
+              src="./Home-Page/images/book1.jfif"
+              alt="A photo for a book cover" />
+            <div class="book__overlay">
+              <p>Read More</p>
+            </div>
+          </a>
+          <p class="book__author">john strass</p>
+          <p class="book__title">Wellness And Paradise</p>
+        </div> -->
+        </div>
+      </div>
+    </div>
+    <div class="features">
+      <div class="features__content">
+        <h4>Heading</h4>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          Excepturi, nulla eveniet! Delectus error, molestiae, magni nisi
+          obcaecati id praesentium.
+        </p>
+      </div>
+    </div>
+  </section>
+  <!--* End Books Section -->
+</main>
+  <footer class="bg-dark text-white mt-auto">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-12">
+                      <h5>Follow Us</h5>
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li class="list-inline-item"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li class="list-inline-item"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        </ul>
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-12">
+                        
+                    </div>
+                </div>
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="text-center">
+            <p>&copy; 2023 My Website. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+<script src="js/home-page.js"></script>
+
+
+<script type="module" src="js/app.js"></script>
+
+
+<script type="module" src="js/main.js"></script>
+
+</body>
